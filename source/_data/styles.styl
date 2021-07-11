@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'iconfont';  /* Project id 2652011 */
+  src: url('//at.alicdn.com/t/font_2652011_88v4cm2uxy2.woff2?t=1625538447364') format('woff2'),
+       url('//at.alicdn.com/t/font_2652011_88v4cm2uxy2.woff?t=1625538447364') format('woff'),
+       url('//at.alicdn.com/t/font_2652011_88v4cm2uxy2.ttf?t=1625538447364') format('truetype'),
+       url('//at.alicdn.com/t/font_2652011_88v4cm2uxy2.svg?t=1625538447364#iconfont') format('svg');
+}
+
+.fab-iconfont {
+  font-family:"iconfont";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1
+}
+
+.fa-leetcode:before {
+  content: "\e602";
+}
+.fa-upyun:before {
+  content: "\e604";
+}
+
+
+/* header-顶部空白 */
+.header, .main-inner {
+  margin-top: 10px;
+  +mobile() {
+    margin-top: 0;
+  }
+}
+
+/* 圆角 */
+.header-inner, ///顶部圆角
+.sidebar-inner { //侧边头像圆角
+  border-radius: $my-radius;
+  +mobile() {
+    border-radius: 0;
+  }
+}
+
+.site-brand-container {
+  border-radius: $my-radius $my-radius 0 0;
+  +mobile() {
+    border-radius: 0 0 0 0;
+  }
+}
+
+// post-文章卡片圆角
+.post-block,
+.post-block+.post-block {
+  border-radius: $my-radius !important;
+}
+
+// comment-圆角
+.comments {
+  border-radius: $my-radius !important;
+}
