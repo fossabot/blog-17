@@ -642,7 +642,7 @@ giscus:
   enable: true
   repo: rocona/rocona.github.io
   repo_id: MDEwOlJlcG9zaXRvcnkzNDk5MzgyMjU=
-  category: 文章评论
+  category: Comments
   category_id: DIC_kwDOFNuiMc4B-PT2
   # Available values: pathname | url | title | og:title
   mapping: og:title
