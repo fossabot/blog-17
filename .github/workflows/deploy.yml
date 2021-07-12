@@ -46,7 +46,6 @@ jobs:
           export TZ='Asia/Shanghai'
           npm install hexo-cli -g
           npm install
-          npm audit fix --force
           npm ls --depth 0
 
       - name: Install Hexo Theme 
